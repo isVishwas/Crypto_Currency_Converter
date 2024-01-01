@@ -1,14 +1,10 @@
-// Test ---------------------- Importing the Redux Toolkit ---------------
 import { createSlice } from "@reduxjs/toolkit";
 
-// Test --------------------- Giving the initial state ------------------
 const initialState = {
   favoriteCoinsList: [],
   coinsList: [],
   searchValue: "",
 };
-
-// Test --------------------- Creating the slice ------------------------
 const coinsListSlice = createSlice({
   name: "coinsList",
   initialState,

@@ -1,4 +1,3 @@
-// Test -------------------------- Importing the Packages ---------------------------------
 import { useState, useEffect } from "react";
 import {
   Box,
@@ -9,10 +8,8 @@ import {
   InputBase,
 } from "@mui/material";
 
-// Test -------------------------- Importing the styles / other components ----------------
 import currencies from "../../data/currencies";
 
-// Test -------------------------- The current component ----------------------------------
 const ExchangeTo = (props) => {
   // Props to pass the value from this component to the parent
   const { getToCurrency, convertedAmount } = props;
@@ -85,5 +82,4 @@ const ExchangeTo = (props) => {
   );
 };
 
-// Test -------------------------- Exporting the current component ------------------------
 export default ExchangeTo;

@@ -1,10 +1,6 @@
-// Test -------------------------- Importing the Packages ---------------------------------
 import { Box } from "@mui/material";
 import HeroContent from "./Content";
 
-// Test -------------------------- Importing the styles / other components ----------------
-
-// Test -------------------------- The current component ----------------------------------
 const Cryto = () => {
   return (
     <Box
@@ -18,5 +14,4 @@ const Cryto = () => {
   );
 };
 
-// Test -------------------------- Exporting the current component ------------------------
 export default Cryto;

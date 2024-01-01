@@ -1,13 +1,10 @@
-// Test -------------------------- Importing the Packages ---------------------------------
 import { Box } from "@mui/material";
 import { useReducer } from "react";
 
-// Test -------------------------- Importing the styles / other components ----------------
 import HeroExchangeFrom from "./ExchangeFrom";
 import HeroExchangeTo from "./ExchangeTo";
 import useCoinGeckoExchangeRates from "../../hooks/coinGecko/useCoinGeckoExchangeRates";
 
-// Test -------------------------- Reducer function ---------------------------------------
 const initialState = {
   fromCurrency: "USD",
   toCurrency: "INR",
@@ -47,7 +44,6 @@ const currencyConvertorReducer = (state, action) => {
   }
 };
 
-// Test -------------------------- The current component ----------------------------------
 const ExchangeContainer = () => {
   // To manage the state of the FROM and TO currency
   const [state, dispatch] = useReducer(currencyConvertorReducer, initialState);
@@ -99,5 +95,4 @@ const ExchangeContainer = () => {
   );
 };
 
-// Test -------------------------- Exporting the current component ------------------------
 export default ExchangeContainer;
