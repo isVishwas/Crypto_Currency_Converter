@@ -74,7 +74,7 @@ exports.get_all_country = catchAsync(async (req, res, next) => {
         }
     }
 
-    if (result) {
+    if (countryData.length) {
         res.status(200).json({
             success: true,
             result: countryData,
