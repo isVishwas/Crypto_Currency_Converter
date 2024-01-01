@@ -36,7 +36,7 @@ if (process.env.NODE_ENV === "development") {
     app.use(morgan("dev"));
 }
 
-app.get("/test", (req, res) => {
+app.get("/", (req, res) => {
   res.send("This is a stackoverflow clone api")
 })
 
