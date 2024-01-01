@@ -9,7 +9,7 @@ const useCountryData = () => {
         // const promise = Promise.resolve(countriesData());
         const promiseResult = async () => {
             // const data = await promise;
-            const requestUrl = "http://localhost:3001/api/country/all";
+            const requestUrl = "https://crypto-currency-converter-backend.vercel.app/api/country/all";
             const response = await fetch(requestUrl);
             const data = await response.json();
 

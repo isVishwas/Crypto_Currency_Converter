@@ -11,7 +11,7 @@ const useCoinGeckoCurrencySingle = (currency, id) => {
         const promiseResult = async () => {
             // Getting the data from the API path which we requested
             // const data = await promise;
-            const requestUrl = `http://localhost:3001/api/coins?vs_currency=${currency}&ids=${id}`;
+            const requestUrl = `https://crypto-currency-converter-backend.vercel.app/api/coins?vs_currency=${currency}&ids=${id}`;
             const response = await fetch(requestUrl);
             const data = await response.json();
             // Printing the data for now, then we will use state to set the state 

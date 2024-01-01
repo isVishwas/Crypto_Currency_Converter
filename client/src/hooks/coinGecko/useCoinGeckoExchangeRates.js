@@ -19,7 +19,7 @@ const useCoinGeckoExchangeRates = (from, to, amount) => {
         // Getting the data from the promise, using await
         const promiseResult = async () => {
 
-            const requestUrl = `http://localhost:3001/api/exchange_rates`;
+            const requestUrl = `https://crypto-currency-converter-backend.vercel.app/api/exchange_rates`;
             const response = await fetch(requestUrl);
             const data = await response.json();
             
