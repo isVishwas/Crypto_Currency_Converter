@@ -13,7 +13,7 @@ const Header = () => {
             py: 1,
           }}
         >
-          <h1>Crypto Converter</h1>
+          <h1>Crypto Currency Converter</h1>
         </Toolbar>
       </AppBar>
     </>
